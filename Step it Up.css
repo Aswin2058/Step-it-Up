@@ -1,0 +1,186 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    display: block;
+}
+
+header {
+    background: rgb(42, 5, 102);
+    color: #ccc;
+    width: 100%; 
+    box-shadow: 10px 0 10px rgb(28, 8, 59);
+    position: none;
+    top: 0;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav .upper-nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20%;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+header nav .lower-nav {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(28, 8, 59)
+}
+
+header nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    width: 100%;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header nav ul li a video {
+    width: 180px;
+    height: auto;
+    border-radius: 4px;
+
+}
+
+header nav .upper-nav .search {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    margin: 10px;
+        margin-left: 8%;
+    background-color: #fff;
+}
+
+
+header nav .upper-nav .search input {
+    width: 100%;
+    max-width: 350px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    color: #43177c;
+    font-size: larger;
+    text-align: center;
+    font-weight: bold;
+}
+
+header nav .upper-nav .search input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+header nav .upper-nav .search svg{
+    background-color: rgb(224, 180, 127);
+    width: 10%;
+    height: auto;
+    cursor: pointer;
+}
+
+header nav .upper-nav .search svg:hover{
+    background-color: rgb(241, 156, 52);
+}
+
+header nav .upper-nav .signIn-container{
+    border: 4px solid rgb(0, 0, 0);
+    width: 80px;
+    gap: 0;
+    display: flex;
+    position: absolute; /* Ensures it stays within the upper-nav */
+    right: 20px; /* Aligns it to the right edge */
+    top: 50%; /* Centers vertically */
+    transform: translateY(-50%); /* Adjusts for vertical centering */
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: bolder;
+    margin-left: 85%;
+}
+
+header nav .upper-nav .signIn-container:hover{
+    background-color: blueviolet;
+}
+
+
+header nav .upper-nav .signIn svg{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+header nav .upper-nav .signIn p{
+    margin: 0;
+    padding: 0;
+}
+
+header nav .lower-nav ul {
+    gap: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+header nav .lower-nav ul li{
+    margin-left: 40px;
+    width: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+header nav .lower-nav ul li:hover{
+    background-color: blueviolet;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin: 5px 0;
+}
