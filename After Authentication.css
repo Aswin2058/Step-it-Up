@@ -166,6 +166,8 @@ header nav .upper-nav .signIn-container{
     border-radius: 40%;
     font-weight: bolder;
     margin-left: 85%;
+    border: 3px solid green;
+    
 }
 
 header nav .upper-nav .signIn-container:hover{
