@@ -78,3 +78,35 @@ document.getElementById('signUp-form').addEventListener('submit', function(event
     // After saving, you can redirect to the sign-in page if needed
     window.location.href = 'sign-in.html';
 });
+
+
+//products and cart
+let cart = JSON.parse(localStorage.getItem("cart")) || []; // Load cart from localStorage
+
+// Function to add product to the cart
+// Function to add product to the cart and store it in localStorage
+function addToCart(productName, price, image) {
+    // Get the current cart from localStorage
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    // Check if the product already exists in the cart
+    const existingProduct = cart.find((item) => item.name === productName);
+
+    if (existingProduct) {
+        // Increment quantity if the product exists
+        existingProduct.quantity += 1;
+    } else {
+        // Add new product to the cart
+        cart.push({
+            name: productName,
+            price: price,
+            image: image,
+            quantity: 1,
+        });
+    }
+
+    // Save the updated cart to localStorage
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(`${productName} has been added to the cart!`);
+}
+
