@@ -9,6 +9,12 @@ html{
     scroll-behavior: smooth;
 }
 
+@media (width:1000px){
+    body{
+        margin-left: 60px;
+    }
+}
+
 header {
     background: rgb(42, 5, 102);
     color: #ccc;
@@ -265,6 +271,12 @@ header nav .lower-nav ul li:hover{
   .cube-container:hover {
     transform: scale(1.5);
   }
+
+  @media (max-width: 1000px){
+    .slide-show{
+        flex-direction: column;
+    }
+}
   
   .cube {
     position: relative;
@@ -442,6 +454,12 @@ header nav .lower-nav ul li:hover{
       #24243e
     );
     filter: blur(30px);
+  }
+
+  @media (max-width: 1000px){
+    .card{
+        width: auto;
+    }
   }
   
   .card__hover {
